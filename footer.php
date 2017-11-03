@@ -22,7 +22,7 @@
         });
     </script>
 <?php endif ?>
-
+<!-- 根据当前页面的名称，加载js文件，用于个人相册中照片的显示 -->
 <?php if ($this->is('page', 'album')):?>
     <script type="text/javascript" src="/usr/themes/sunzx/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/usr/themes/sunzx/js/jquery.flexslider.js"></script>
@@ -36,7 +36,7 @@
                 controlNav: false,
                 animationLoop: false,
                 slideshow: false,
-                itemWidth: 200,
+                itemWidth: 150,
                 itemMargin: 5,
                 asNavFor: '#slider'
             });
@@ -52,7 +52,7 @@
         });
     </script>
 <?php endif ?>
-<!-- 根据当前页面的名称，加载js文件，用于显示图片幻灯片 -->
+<!-- 根据当前页面的名称，加载js文件，用于点击图片放大显示 -->
 <?php if ($this->is('post')):?>
     <script type="text/javascript" src="/usr/themes/sunzx/js/jquery-1.3.2.min.js"></script>
 	<script type="text/javascript" src="/usr/themes/sunzx/js/jquery.imgbox.pack.js"></script>
