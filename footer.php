@@ -11,7 +11,7 @@
 </div>
 <!-- 根据当前页面的名称，加载js文件，用于显示图片幻灯片 -->
 <?php if ($this->is('page', 'introduction')):?>
-    <script type="text/javascript" src="/usr/themes/sunzx/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/usr/themes/sunzx/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/usr/themes/sunzx/js/jquery.flexslider.js"></script>
     <script type="text/javascript">
         $(window).load(function(){
@@ -24,7 +24,7 @@
 <?php endif ?>
 
 <?php if ($this->is('page', 'album')):?>
-    <script type="text/javascript" src="/usr/themes/sunzx/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/usr/themes/sunzx/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/usr/themes/sunzx/js/jquery.flexslider.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -49,6 +49,22 @@
                 start: function(slider) {
                 }
             });
+        });
+    </script>
+<?php endif ?>
+<!-- 根据当前页面的名称，加载js文件，用于显示图片幻灯片 -->
+<?php if ($this->is('post')):?>
+    <script type="text/javascript" src="/usr/themes/sunzx/js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="/usr/themes/sunzx/js/jquery.imgbox.pack.js"></script>
+    <script>
+        $(function(){
+    	    $(".imageClickZoom").imgbox({
+	        	'speedIn'		: 250,
+	        	'speedOut'		: 250,
+	        	'alignment'		: 'center',
+	        	'overlayShow'	: true,
+		        'allowMultiple'	: false
+	        });
         });
     </script>
 <?php endif ?>

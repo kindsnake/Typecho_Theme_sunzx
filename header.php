@@ -19,7 +19,7 @@
 根据当前页面的名称，决定是否加载flexslider.css文件。
 -->
 <?php if ($this->is('page', 'introduction'||'album')):?>
-    <link rel="stylesheet" href="<?php $this->options->siteUrl('usr/themes/sunzx/flexslider.css'); ?>">
+<link rel="stylesheet" href="<?php $this->options->siteUrl('usr/themes/sunzx/flexslider.css'); ?>">
 <?php endif ?>
 
 <?php $this->header(); ?>
